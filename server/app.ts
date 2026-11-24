@@ -6,7 +6,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ZipArchive } from 'archiver';
+import archiver from 'archiver';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import Stripe from 'stripe';
 import {
@@ -3068,7 +3068,7 @@ export function createApp(hooks: ServerRealtimeHooks = {}): express.Express {
     res.setHeader('Content-Type', 'application/zip');
     res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
 
-    const archive = new ZipArchive({ zlib: { level: 6 } });
+    const archive = archiver('zip', { zlib: { level: 6 } });
     archive.on('error', (err: Error) => {
       console.error('ZIP archive error:', err);
       if (!res.headersSent) {
