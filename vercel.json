@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "{restaurant.config.json}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "/api/index?__path=health"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index?__path=$1"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "installCommand": "npm install"
+}

@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *, .system-dark, .system-dark *));
+
+/* لوحة ألوان zoldix المريحة للعين والمتدرجة بين البني الدافئ والكراميل والعنبر */
+:root {
+  --bg-canvas: #13100E;
+  --bg-surface: #1B1613;
+  --bg-subtle: #241D19;
+  --bg-header: rgba(19, 16, 14, 0.86);
+  --bg-bottom-bar: rgba(27, 22, 19, 0.96);
+
+  --text-primary: #EFE7DC;
+  --text-secondary: #C7B9A8;
+  --text-muted: #9A8B7A;
+
+  --border-hairline: rgba(239, 231, 220, 0.10);
+  --border-strong: rgba(239, 231, 220, 0.22);
+
+  --accent-fire: #C96A3B;
+  --accent-fire-hover: #B3582B;
+  --accent-gold: #DDA15E;
+  --accent-gold-soft: rgba(221, 161, 94, 0.15);
+  --accent-fire-soft: rgba(201, 106, 59, 0.16);
+
+  --shadow-card: 0 12px 32px -10px rgba(0, 0, 0, 0.48);
+  --shadow-modal: 0 28px 64px -14px rgba(0, 0, 0, 0.78);
+  color-scheme: dark;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: 'Tajawal', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Cairo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+
+  /* منع التكبير التلقائي في سفاري آيفون عند التركيز على الحقول */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+    font-family: inherit;
+  }
+
+  button,
+  a,
+  [role="button"] {
+    touch-action: manipulation;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 2px;
+  }
+}
+
+.safari-blur {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.safari-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.touch-scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.touch-scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.pb-safe {
+  padding-bottom: max(12px, env(safe-area-inset-bottom, 0px));
+}
+
+.bottom-bar-safe {
+  padding-bottom: max(10px, env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 16px));
+  padding-right: max(16px, env(safe-area-inset-right, 16px));
+}
+
+@keyframes modalFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes sheetSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-modal-in {
+  animation: modalFadeUp 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-sheet-in {
+  animation: sheetSlideUp 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-modal-in,
+  .animate-sheet-in {
+    animation: none !important;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

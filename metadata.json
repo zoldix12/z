@@ -1,0 +1,11 @@
+{
+  "name": "سلطان الشاورما — طلبات أونلاين",
+  "short_name": "سلطان",
+  "description": "اطلب أشهى الشاورما المشوية على الحطب والوجبات والسندويشات والمقبلات أونلاين من مطعم سلطان الشاورما مع توصيل سريع والدفع كاش عند الاستلام.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

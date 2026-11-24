@@ -1,0 +1,295 @@
+{
+  "restaurant": {
+    "name": "zoldix",
+    "shortName": "zoldix",
+    "logoUrl": "",
+    "tagline": "نكهة النار الهادئة وأصالة الشواء في كل لقمة",
+    "heroSubtitle": "نحضر في مطعم zoldix أجود شرائح اللحم البلدي والدجاج المتبل يومياً على نار الحطب ونقدمها مع خبز الصاج الطازج والمايونيز الكريمي والمثومة الخاصة في تجربة مريحة ومتقنة",
+    "currency": "د.أ",
+    "deliveryFee": 1.5,
+    "freeDeliveryThreshold": 15.0,
+    "phone": "0791234567",
+    "phoneDisplay": "0791234567",
+    "address": "عمّان شارع المدينة المنورة مقابل دوار الواحة مجمع رقم 42",
+    "hours": "يومياً من الحادية عشرة صباحاً حتى الثانية بعد منتصف الليل",
+    "estimatedDeliveryMinutes": "من ثلاثين إلى خمس وأربعين دقيقة",
+    "about": "في مطعم zoldix نؤمن أن الطعام الرائع يبدأ من اختيار المكونات الطازجة والاهتمام بأدق التفاصيل من تتبيل اللحم لساعات طويلة حتى تحميص الصاج وتحضير الصوصات اليومية لتصل إلى مائدتك ساخنة ومتوازنة النكهة",
+    "acceptingOrders": true,
+    "pausedMessage": "المطعم يشهد ضغطاً مرتفعاً في الطلبات حالياً وسنستأنف استقبال الطلبات خلال دقائق",
+    "loyaltyPointsPerUnit": 10,
+    "loyaltyRedeemValue": 0.02
+  },
+  "theme": {
+    "canvas": "#13100E",
+    "surface": "#1B1613",
+    "subtle": "#241D19",
+    "textPrimary": "#EFE7DC",
+    "textSecondary": "#C7B9A8",
+    "textMuted": "#9A8B7A",
+    "accent": "#C96A3B",
+    "accentSecondary": "#DDA15E"
+  },
+  "midShowcase": {
+    "eyebrow": "ختام دافئ بعد الشواء",
+    "title": "من الكنافة النابلسية الذهبية إلى عصير الليمون والنعنع الطازج",
+    "subtitle": "تجربة zoldix تكتمل بتناغم التحلية الدافئة والمشروبات الطبيعية المحضرة لحظة بلحظة",
+    "productId": "ds-kunafa"
+  },
+  "heroChapters": [
+    {
+      "id": "ch-1",
+      "title": "تحضير اللحم على الصخر البركاني",
+      "subtitle": "شرائح لحم ودجاج مشوية على نار هادئة مع حبوب الرمان والأعشاب الطازجة",
+      "startFrame": 0,
+      "endFrame": 33,
+      "productId": "sh-signature-platter"
+    },
+    {
+      "id": "ch-2",
+      "title": "البخار الساخن والفرن الحجري",
+      "subtitle": "خبز صاج وطابون يخرج مباشرة من الفرن ليحتضن النكهة الدافئة",
+      "startFrame": 34,
+      "endFrame": 66,
+      "productId": "sh-lamb-saj"
+    },
+    {
+      "id": "ch-3",
+      "title": "سكب الصوص الذهبي الخاص",
+      "subtitle": "لمسة أخيرة من صوص الثوم والأعشاب فوق الشرائح المحمرة",
+      "startFrame": 67,
+      "endFrame": 99,
+      "productId": "offer-zoldix-duo"
+    }
+  ],
+  "deliveryAreas": [
+    { "name": "تلاع العلي", "lat": 31.9925, "lng": 35.8644 },
+    { "name": "خلدا", "lat": 31.9981, "lng": 35.8384 },
+    { "name": "الشميساني", "lat": 31.9698, "lng": 35.9022 },
+    { "name": "الجبيهة", "lat": 32.0252, "lng": 35.8705 },
+    { "name": "عبدون", "lat": 31.9465, "lng": 35.8856 },
+    { "name": "الصويفية", "lat": 31.9585, "lng": 35.8615 },
+    { "name": "الدوار السابع", "lat": 31.9562, "lng": 35.8508 },
+    { "name": "مرج الحمام", "lat": 31.9012, "lng": 35.8458 }
+  ],
+  "categories": [
+    { "id": "shawarma", "name": "الشاورما المميزة" },
+    { "id": "meals", "name": "الوجبات" },
+    { "id": "sandwiches", "name": "السندويشات" },
+    { "id": "appetizers", "name": "المقبلات" },
+    { "id": "sauces", "name": "الصوصات والمايونيز" },
+    { "id": "drinks", "name": "المشروبات" },
+    { "id": "desserts", "name": "الحلويات" }
+  ],
+  "variants": [
+    { "id": "saj", "name": "خبز صاج مقرمش", "priceDelta": 0.0 },
+    { "id": "arabic-bread", "name": "خبز عربي طازج", "priceDelta": 0.0 },
+    { "id": "taboon", "name": "خبز طابون ساخن", "priceDelta": 0.25 },
+    { "id": "double-meat", "name": "حجم دبل مع شرائح مضاعفة", "priceDelta": 0.9 },
+    { "id": "jumbo-zoldix", "name": "حجم zoldix الكبير", "priceDelta": 1.35 }
+  ],
+  "addons": [
+    { "id": "mayo-classic", "name": "مايونيز كريمي زيادة", "price": 0.25 },
+    { "id": "mayo-garlic", "name": "دبل مايونيز بالثوم", "price": 0.45 },
+    { "id": "extra-toum", "name": "مثومة شامية إضافية", "price": 0.35 },
+    { "id": "spicy-toum", "name": "مثومة حارة", "price": 0.35 },
+    { "id": "extra-chicken-slices", "name": "شرائح دجاج إضافية", "price": 1.25 },
+    { "id": "extra-beef-slices", "name": "شرائح لحم بلدي إضافية", "price": 1.5 },
+    { "id": "cheddar-sauce", "name": "صوص جبنة شيدر ساخنة", "price": 0.65 },
+    { "id": "mozzarella", "name": "جبنة موزاريلا ذائبة", "price": 0.6 },
+    { "id": "honey-mustard-garlic", "name": "صوص ثوم بالعسل والأعشاب", "price": 0.4 },
+    { "id": "pomegranate", "name": "دبس رمان وحبوب رمان", "price": 0.3 },
+    { "id": "tahini", "name": "صوص طحينة بلدية", "price": 0.35 },
+    { "id": "spicy-sauce", "name": "صوص شطة حارة خاص", "price": 0.25 },
+    { "id": "extra-fries", "name": "بطاطا مقلية جانبية", "price": 1.0 },
+    { "id": "extra-pickles", "name": "مخلل خيار ولفت", "price": 0.2 }
+  ],
+  "quickNotes": [
+    "كثّر مايونيز",
+    "كثّر مثومة",
+    "كثّر صوص",
+    "شرائح رفيعة",
+    "تحميص قوي",
+    "بدون بصل",
+    "بدون مخلل",
+    "بدون مايونيز",
+    "حار جداً",
+    "صوص بعلبة جانبية"
+  ],
+  "offers": [
+    {
+      "id": "offer-zoldix-duo",
+      "name": "ثنائي zoldix الفاخر",
+      "description": "طبق شاورما التوقيع مع سندويش صاج لحم بلدي وبطاطا مقرمشة وعلبتي صوص ومشروبين باردين",
+      "originalPrice": 9.5,
+      "price": 6.9,
+      "discountLabel": "توفير 27 بالمئة",
+      "image": "/images/zoldix-signature.jpg",
+      "variantIds": ["saj", "taboon", "double-meat"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "extra-toum", "honey-mustard-garlic", "pomegranate", "cheddar-sauce"]
+    },
+    {
+      "id": "offer-combo-classic",
+      "name": "كومبو الصاج الكلاسيكي",
+      "description": "سندويش شاورما صاج دجاج أو لحم مع بطاطا مقلية ومثومة ومايونيز ومشروب بارد",
+      "originalPrice": 4.5,
+      "price": 3.25,
+      "discountLabel": "توفير 28 بالمئة",
+      "image": "/images/zoldix-lamb-wrap.jpg",
+      "variantIds": ["saj", "taboon", "double-meat", "jumbo-zoldix"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "extra-toum", "spicy-toum", "cheddar-sauce", "spicy-sauce"]
+    },
+    {
+      "id": "offer-family-box",
+      "name": "مائدة العائلة الكبيرة",
+      "description": "كيلو شرائح شاورما مشكل مع صحن حمص وبطاطا عائلية ومخللات وصوصات متنوعة وخبز ساخن",
+      "originalPrice": 18.5,
+      "price": 13.9,
+      "discountLabel": "توفير 25 بالمئة",
+      "image": "/images/zoldix-family-feast.jpg",
+      "variantIds": ["saj", "arabic-bread", "jumbo-zoldix"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "extra-toum", "tahini", "cheddar-sauce", "extra-fries"]
+    }
+  ],
+  "items": [
+    {
+      "id": "sh-signature-platter",
+      "categoryId": "shawarma",
+      "name": "طبق توقيع zoldix المشكل",
+      "description": "شرائح لحم ودجاج مشوية على الحطب تقدم فوق خبز الطابون مع الرمان وصوص الأعشاب الذهبي",
+      "price": 5.75,
+      "image": "/images/zoldix-signature.jpg",
+      "variantIds": ["taboon", "saj", "double-meat", "jumbo-zoldix"],
+      "addonIds": ["honey-mustard-garlic", "pomegranate", "extra-toum", "tahini", "mayo-garlic"]
+    },
+    {
+      "id": "sh-lamb-saj",
+      "categoryId": "shawarma",
+      "name": "صاج شاورما اللحم البلدي",
+      "description": "خبز صاج محمص محشو بشرائح لحم الخروف المتبل مع الطحينة وبصل السماق والبقدونس",
+      "price": 2.9,
+      "image": "/images/zoldix-lamb-wrap.jpg",
+      "variantIds": ["saj", "taboon", "double-meat", "jumbo-zoldix"],
+      "addonIds": ["tahini", "pomegranate", "extra-beef-slices", "mayo-classic", "spicy-sauce"]
+    },
+    {
+      "id": "sh-chicken-arabi",
+      "categoryId": "shawarma",
+      "name": "صحن شاورما دجاج عربي",
+      "description": "شاورما دجاج مشوية على الفحم مع ودجز البطاطا الذهبية وخبز الصاج والمثومة الكريمية",
+      "price": 4.4,
+      "image": "/images/zoldix-chicken-plate.jpg",
+      "variantIds": ["saj", "double-meat", "jumbo-zoldix"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "extra-toum", "spicy-toum", "cheddar-sauce"]
+    },
+    {
+      "id": "sh-chicken-saj",
+      "categoryId": "shawarma",
+      "name": "سندويش شاورما دجاج صاج",
+      "description": "سندويش صاج مقرمش محشو بشرائح الدجاج المشوية والمثومة والمايونيز ومخلل الخيار",
+      "price": 2.25,
+      "image": "/images/zoldix-chicken-plate.jpg",
+      "variantIds": ["saj", "taboon", "double-meat", "jumbo-zoldix"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "extra-toum", "mozzarella", "pomegranate"]
+    },
+    {
+      "id": "ml-royal-beef",
+      "categoryId": "meals",
+      "name": "وجبة اللحم الملكية",
+      "description": "سندويشان صاج لحم بلدي مع بطاطا متبلة وعلبة طحينة وبصل بالسماق ومشروب بارد",
+      "price": 6.5,
+      "image": "/images/zoldix-lamb-wrap.jpg",
+      "variantIds": ["saj", "taboon", "jumbo-zoldix"],
+      "addonIds": ["tahini", "extra-beef-slices", "cheddar-sauce", "extra-fries"]
+    },
+    {
+      "id": "ml-family-spread",
+      "categoryId": "meals",
+      "name": "وجبة الضيافة العائلية",
+      "description": "تشكيلة فاخرة من شرائح شاورما اللحم والدجاج مع الحمص والسلطة والمخللات والخبز الساخن",
+      "price": 14.5,
+      "image": "/images/zoldix-family-feast.jpg",
+      "variantIds": ["saj", "arabic-bread", "jumbo-zoldix"],
+      "addonIds": ["mayo-classic", "extra-toum", "tahini", "extra-chicken-slices", "extra-beef-slices"]
+    },
+    {
+      "id": "sw-beef-classic",
+      "categoryId": "sandwiches",
+      "name": "سندويش لحم بالطحينة",
+      "description": "خبز عربي دافئ محشو بلحم الشاورما المشوي وصوص الطحينة البلدية والبقدونس",
+      "price": 2.1,
+      "image": "/images/zoldix-lamb-wrap.jpg",
+      "variantIds": ["arabic-bread", "saj", "taboon", "double-meat"],
+      "addonIds": ["tahini", "pomegranate", "extra-beef-slices", "spicy-sauce"]
+    },
+    {
+      "id": "sw-chicken-classic",
+      "categoryId": "sandwiches",
+      "name": "سندويش دجاج بالمثومة",
+      "description": "خبز عربي طازج محشو بدجاج الشاورما المتبل والمثومة الشامية والمخلل",
+      "price": 1.65,
+      "image": "/images/zoldix-chicken-plate.jpg",
+      "variantIds": ["arabic-bread", "saj", "taboon", "double-meat"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "extra-toum", "cheddar-sauce"]
+    },
+    {
+      "id": "ap-meze-hummus",
+      "categoryId": "appetizers",
+      "name": "حمص وفلافل بالسمسم",
+      "description": "صحن حمص كريمي بزيت الزيتون البكر والسماق مع أربع حبات فلافل مقرمشة وخبز ساخن",
+      "price": 2.2,
+      "image": "/images/zoldix-meze.jpg",
+      "variantIds": [],
+      "addonIds": ["tahini", "extra-pickles", "spicy-sauce"]
+    },
+    {
+      "id": "ap-fries",
+      "categoryId": "appetizers",
+      "name": "بطاطا متبلة بالأعشاب",
+      "description": "قطع بطاطا ذهبية مقرمشة متبلة بإكليل الجبل تقدم ساخنة مع المايونيز",
+      "price": 1.5,
+      "image": "/images/zoldix-chicken-plate.jpg",
+      "variantIds": ["saj", "jumbo-zoldix"],
+      "addonIds": ["mayo-classic", "mayo-garlic", "cheddar-sauce", "extra-toum"]
+    },
+    {
+      "id": "sc-herb-garlic",
+      "categoryId": "sauces",
+      "name": "علبة صوص الثوم الذهبي بالأعشاب",
+      "description": "الخلطة الخاصة بمطعم zoldix من الثوم المشوي والأعشاب وزيت الزيتون",
+      "price": 0.6,
+      "image": "/images/zoldix-signature.jpg",
+      "variantIds": [],
+      "addonIds": ["mayo-classic", "extra-toum"]
+    },
+    {
+      "id": "sc-toum-mayo",
+      "categoryId": "sauces",
+      "name": "علبة مثومة ومايونيز كريمي",
+      "description": "مثومة شامية ناعمة مخفوقة يومياً مع لمسة مايونيز غني",
+      "price": 0.5,
+      "image": "/images/zoldix-chicken-plate.jpg",
+      "variantIds": [],
+      "addonIds": ["spicy-toum", "cheddar-sauce"]
+    },
+    {
+      "id": "dr-lemon-mint",
+      "categoryId": "drinks",
+      "name": "عصير ليمون ونعنع طازج",
+      "description": "ليمون طبيعي معصور يومياً مع أوراق النعنع الأخضر والثلج المجروش",
+      "price": 1.5,
+      "image": "/images/mint-lemonade.webp",
+      "variantIds": [],
+      "addonIds": []
+    },
+    {
+      "id": "ds-kunafa",
+      "categoryId": "desserts",
+      "name": "كنافة نابلسية بالفستق الحلبي",
+      "description": "كنافة ذهبية مقرمشة محشوة بالجبنة الذائبة ومزينة بالفستق الحلبي والقطر الدافئ",
+      "price": 2.95,
+      "image": "/images/zoldix-kunafa.jpg",
+      "variantIds": [],
+      "addonIds": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+zoldix — نشر نسخة Vercel
+========================
+
+1) ارفع محتويات هذا المشروع كاملة إلى جذر مستودع GitHub، وليس مجلد dist فقط.
+2) اربط المستودع بمشروع Vercel الحالي (zoldix) واترك Root Directory فارغاً.
+3) تأكد أن إعدادات البناء:
+   Install: npm install
+   Build:   npm run build
+   Output:  dist
+
+متغيرات Vercel المطلوبة لتفعيل وظائف الموقع:
+- SMTP_HOST=smtp.gmail.com
+- SMTP_PORT=465
+- SMTP_USER=بريد Gmail المرسل
+- SMTP_PASS=كلمة مرور تطبيق Gmail (App Password) — لا تضع كلمة مرور Gmail العادية
+- SMTP_FROM=بريد المرسل (اختياري)
+- ORDER_TO=البريد الذي يستقبل الطلبات
+- ADMIN_NOTIFY_EMAIL=بريد تنبيهات الإدارة
+- ADMIN_PASSWORD=كلمة مرور إدارة قوية
+- DEVELOPER_PRIMARY_EMAIL=بريد المطور المعتمد
+- SESSION_SECRET=قيمة عشوائية طويلة وفريدة
+
+مهم للتخزين الدائم:
+أضف Upstash Redis REST ثم عرّف:
+- KV_REST_API_URL
+- KV_REST_API_TOKEN
+أو استخدم UPSTASH_REDIS_REST_URL وUPSTASH_REDIS_REST_TOKEN.
+بدون Redis سيظهر /api/health أن التخزين مؤقت (ephemeral-tmp)، ولا تعتمد على هذا الوضع لحفظ الطلبات والحسابات.
+
+قيود Vercel:
+- WebSocket غير مدعوم بواسطة هذه الوظيفة؛ التحديثات الفورية والمحادثة المباشرة تحتاج خادماً دائماً يدعم WebSocket.
+- بعد تعديل متغيرات البيئة أعد نشر Production.
+
+حماية:
+- لا ترفع ملفات .env أو أسرار SMTP أو ملفات بيانات التشغيل.
+- data/store.json مستبعد عمداً لأنه قد يحتوي جلسات وبيانات حسابات؛ لا تعِد إضافته إلى GitHub.
+- لا تشارك App Password في المحادثات أو المستودع.
+
+الفحص بعد النشر:
+افتح https://YOUR-DOMAIN/api/health
+يجب أن يعيد JSON مع ok=true. افحص smtpConfigured وpersistentStorage قبل تجربة OTP والطلبات.
